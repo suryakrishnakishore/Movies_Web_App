@@ -1,0 +1,17 @@
+.historyContainer {
+    width: 100%;
+    padding: 10px;
+}
+
+.parent {
+    width: 100%;
+    /* background-color: red; */
+    padding: 12px 0px;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.historyContainer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}

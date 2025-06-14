@@ -1,0 +1,288 @@
+/* .headContainer {
+    width: 100%;
+    height: fit-content;
+    background-color: #0a0b0b;
+    position: fixed;
+} */
+
+.head {
+    width: 100%;
+    height: 70px;
+    background-color: #060707;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 2%;
+    position: relative;
+}
+
+.logo {
+    /* background-color: gray; */
+    width: fit-content;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.navigation {
+    width: 40%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    column-gap: 30px;
+}
+
+.premium {
+    width: fit-content;
+    border: solid 2px gold;
+    padding: 4px 18px;
+    border-radius: 15px;
+
+    font-size: 12px;
+    color: gold;
+    font-weight: bold;
+    display: flex;
+    column-gap: 5px;
+
+}
+
+.navLinks {
+    width: fit-content;
+    display: flex;
+    list-style-type: none;
+    column-gap: 20px;
+    align-items: center;
+
+}
+
+.navLink {
+    padding: 21px 0px;
+
+}
+
+.navLink:first-child {
+    border-bottom: 3px solid #d9008d;
+    font-weight: bold;
+}
+
+/* Search CSS */
+
+.search {
+    width: fit-content;
+    height: 70px;
+    /* background-color: purple; */
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.searchbox {
+    width: fit-content;
+    height: 40px;
+    background-color: #1e1f20;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    padding: 0px 10px;
+}
+
+.headericon {
+    height: 40px;
+    width: 40px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput {
+    height: 25px;
+    width: 200px;
+    background-color: #1e1f20;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.userIcon {
+    height: 40px;
+    cursor: pointer;
+}
+.moviesIcon {
+    width: 6rem;
+    cursor: pointer;
+    align-self: center;
+    overflow: hidden;
+}
+/* Responsive CSS styles */
+@media (max-width: 1700px) {
+    .navigation {
+        width: 60%;
+        column-gap: 22px;
+    }
+
+    .searchInput {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .navigation {
+        width: 100%;
+        column-gap: 15px;
+    }
+
+    .searchInput {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1051px) {
+    .navigation {
+        width: 75%;
+        column-gap: 10px;
+    }
+
+    .searchInput {
+        width: 150px;
+    }
+
+    .headericon,
+    .userIcon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .search{
+        column-gap: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navigation {
+        width: 70%;
+        column-gap: 5px;
+    }
+
+    .head {
+        height: 56px;
+        padding: 0 3%;
+    }
+
+    .logo {
+        column-gap: 6px;
+    }
+
+    .premium {
+        padding: 2px 10px;
+        font-size: 11px;
+        border-radius: 10px;
+    }
+
+    .navLinks {
+        column-gap: 10px;
+        height: 56px;
+    }
+
+    .navLink {
+        padding: 14px 0;
+        font-size: 12px;
+    }
+
+    .search {
+        height: 56px;
+        column-gap: 10px;
+    }
+
+    .searchbox {
+        height: 32px;
+        border-radius: 12px;
+        column-gap: 7px;
+        padding: 0 6px;
+    }
+
+    .headericon,
+    .userIcon {
+        height: 32px;
+        width: 32px;
+    }
+
+    .searchInput {
+        height: 20px;
+        width: 80px;
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 880px) {
+    .head {
+        height: 45px;
+        padding: 0 3%;
+    }
+
+    .logo {
+        column-gap: 4px;
+    }
+
+    .navigation {
+        width: 75%;
+        height: 45px;
+        column-gap: 10px;
+    }
+
+    .premium {
+        padding: 2px 6px;
+        font-size: 9px;
+        border-radius: 7px;
+    }
+
+    .navLinks {
+        column-gap: 8px;
+    }
+
+    .navLink {
+        padding: 12px 0;
+        font-size: 10px;
+    }
+
+    .search {
+        height: 45px;
+        column-gap: 9px;
+    }
+
+    .searchbox {
+        height: 27px;
+        border-radius: 11px;
+        column-gap: 7px;
+        padding: 2px 6px;
+    }
+
+    .headericon,
+    .userIcon {
+        height: 32px;
+        width: 32px;
+    }
+
+    .searchInput {
+        height: 10px;
+        width: 80px;
+        font-size: 13px;
+    }
+}
+
+.popUp {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(37, 31, 31, 0.955);
+    border-radius: 1rem;
+    box-shadow:
+        0 4px 32px 0 rgba(0,0,0,0.7),      /* deep dark shadow */
+        0 0 0 2px rgba(255,255,255,0.08),   /* subtle light border */
+        0 1.5px 6px 0 rgba(220, 0, 141, 0.10), /* accent color */
+        0 0 16px 2px rgba(255,255,255,0.10);   /* soft glow */
+    position: absolute;
+    z-index: 1000;
+    right: 1rem;
+}

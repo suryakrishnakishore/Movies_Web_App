@@ -1,0 +1,34 @@
+{
+    "slides": [
+        {
+            "src": "https://c4.wallpaperflare.com/wallpaper/353/369/80/movie-poster-george-spigot-spigot-dune-movie-hd-wallpaper-preview.jpg",
+            "alt": "Dune Movie Poster",
+            "title": "Dune",
+            "description": "A science fiction film based on Frank Herbert's novel, exploring the desert planet Arrakis and its valuable resource, spice."
+        },
+        {
+            "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9CZpj5etG8sdTEvif2tLD6xfNw1drG1g3LnpTAxtulCruSHfi_0tnJ5Rr1pHzmBaL35T35U78TXz8WTgLcOf4Y9bVKhmyUrxUArxvdLr4LojzoKvTWwo5btEhEbkIelh_zuB1kXXvglBz/w1200-h630-p-k-no-nu/inception-poster.jpg",
+            "alt": "Inception Movie Poster",
+            "title": "Inception",
+            "description": "A mind-bending thriller directed by Christopher Nolan, where a thief enters the dreams of others to steal secrets."
+        },
+        {
+            "src": "https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/4/z/x/small-spos8585-poster-movie-interstellar-wall-poster-sl-8585-original-imaghzwa4c7zahsz.jpeg?q=90&crop=false",
+            "alt": "Interstellar Movie Poster",
+            "title": "Interstellar",
+            "description": "A visually stunning space epic directed by Christopher Nolan, exploring themes of love, sacrifice, and the survival of humanity."
+        },
+        {
+            "src": "https://sophieetallis.wordpress.com/wp-content/uploads/2018/04/cinescape-603x336-2310721.png?w=584",
+            "alt": "Avengers Infinity War Movie Poster",
+            "title": "Avengers: Infinity War",
+            "description": "A superhero film featuring the Avengers and their allies as they face the powerful Thanos in a battle to save the universe."
+        },
+        {
+            "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi_hF3haP6g4HUexLuJOJ3Uv5CAQx2dPiJnkyH8EzZX2vNvklBMLaioVLeuzbAsIKBH3Q&usqp=CAU",
+            "alt": "Conjuring Movie Poster",
+            "title": "The Conjuring",
+            "description": "A horror film based on the real-life paranormal investigations of Ed and Lorraine Warren, focusing on a haunted farmhouse."
+        }
+    ]
+}

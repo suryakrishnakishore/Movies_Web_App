@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 5rem;
+  background: linear-gradient(135deg, #181818 60%, #232526 100%);
+  min-height: 100vh;
+  width: 100%;
+  color: #f3f3f3;
+  box-sizing: border-box;
+}
+
+.headData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userLogo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 18px;
+  object-fit: cover;
+  background: #222;
+  border: 2px solid #444;
+  box-shadow: 0 2px 16px 0 #000a;
+}
+
+.container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-shadow: 0 2px 8px #000a;
+}
+
+.userDetails {
+  margin-top: 28px;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(30, 30, 30, 0.92);
+  border-radius: 14px;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 32px 0 #0006;
+  border: 1px solid #292929;
+  margin-bottom: 4rem;
+}
+
+.userDetails div {
+  margin: 14px 0;
+  font-size: 1.08rem;
+  color: #e0e0e0;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+}
+
+.userDetails strong {
+  color: #00ffe7;
+  font-weight: 600;
+  margin-right: 8px;
+  min-width: 80px;
+  display: inline-block;
+}
+
+.userDetails p {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.editIcon {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+.userDetails div:hover .editIcon {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 2rem;
+  color: #00ffe7;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.closeIcon:hover {
+  color: #ff3b3b;
+  transform: scale(1.15) rotate(90deg);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1000;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem 0.5rem;
+  }
+  .userDetails {
+    padding: 16px 8px;
+  }
+}

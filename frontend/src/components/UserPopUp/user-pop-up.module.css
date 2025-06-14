@@ -1,0 +1,71 @@
+
+:root {
+    --color-bg: #f0f0f0;
+    --color-text: #898787;
+    --color-hover-bg: #e0e0e0;
+    --color-hover-text: #000;
+    --color-icon: #666;
+    --color-hover-icon: #000;
+
+    --color-header-bg: #fff;
+    --color-header-text: #000;
+}
+.userPop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.userPop li {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: var(--color-text);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.userPop li:hover {
+    background-color: var(--color-hover-bg);
+    color: var(--color-hover-text);
+    cursor: pointer;
+}
+
+.premium {
+    width: fit-content;
+    border: solid 2px gold;
+    padding: 3px 10px;
+    border-radius: 15px;
+
+    font-size: 11px;
+    color: gold;
+    font-weight: bold;
+    display: flex;
+    column-gap: 5px;
+
+}
+
+.userDetails {
+    display: flex;
+    column-gap: 10px;
+    padding: 1rem;
+    gap: 10px;
+}
+.userIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-icon);
+    margin-top: 0.2rem;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text);
+    gap: 0.1rem;
+    margin-top: 5px;
+}
+.userName {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}

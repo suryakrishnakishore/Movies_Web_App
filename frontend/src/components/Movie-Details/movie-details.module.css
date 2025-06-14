@@ -1,0 +1,76 @@
+.container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.details {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+    height: 100%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.image {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.likes {
+    background-color: rgba(37, 31, 31, 0.955);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 22px;
+}
+.likes span {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.thumb{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.likes p {
+    color: #fff;
+    font-size: 1.4rem;
+}
