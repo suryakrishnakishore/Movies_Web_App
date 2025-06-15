@@ -1,6 +1,9 @@
 import axios from "axios";
+import env from "dotenv";
 
-const API_URL = "https://movies-web-app-backed.onrender.com/api-v1";
+env.config();
+
+const API_URL = process.env.BACKEND_API_URL;
 
 const api = axios.create({
     baseURL: API_URL,
