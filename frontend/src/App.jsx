@@ -9,6 +9,8 @@ import { Toaster } from "sonner";
 import Details from "./pages/details.jsx";
 import Videos from "./pages/videos.jsx";
 import Account from "./pages/account.jsx";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const RootLayout = () => {
   // console.log(JSON.parse(localStorage.getItem("jiouser")));
@@ -27,7 +29,38 @@ const RootLayout = () => {
   ))
 }
 function App() {
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    // Wait for all resources (including images) to load
+    const handleLoad = () => setLoading(false);
+
+    if (document.readyState === "complete") {
+      setLoading(false);
+    } else {
+      window.addEventListener("load", handleLoad);
+      return () => window.removeEventListener("load", handleLoad);
+    }
+  }, []);
+
+  if (loading) {
+    return (
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "#fff",
+          zIndex: 9999,
+          fontSize: "2rem",
+        }}
+      >
+        Loading...
+      </div>
+    );
+  }
   return (
     <main>
       <Router>

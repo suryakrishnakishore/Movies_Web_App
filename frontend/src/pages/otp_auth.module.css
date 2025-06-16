@@ -130,3 +130,74 @@
   position: absolute;
   top: 2rem;
 }
+
+/* ...existing code... */
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 0.5rem;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .authContainer {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 0.8rem;
+    height: auto;
+    min-height: 80dvh;
+    border-radius: 0.5rem;
+  }
+
+  .authContainer h1 {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .authContainer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .authContainer h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .authContainer p,
+  .authContainer label {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .authContainer button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  .phoneInput {
+    height: 3rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .phoneInput select {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .authContainer input {
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .message {
+    top: 1rem;
+    font-size: 0.95rem;
+    left: 0.5rem;
+    right: 0.5rem;
+  }
+}
