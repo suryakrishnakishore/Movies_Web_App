@@ -14,8 +14,8 @@ function OtpAuth() {
   const [loading, setLoading] = useState(false);
   // const [country, setCountry] = useState('IN');
 
-  const [ checkMail, setCheckMail ] = useState(false);
-  const [ checkOTP, setCheckOTP ] = useState(false);
+  const [checkMail, setCheckMail] = useState(false);
+  const [checkOTP, setCheckOTP] = useState(false);
 
   const navigate = useNavigate();
   const { user, setCredentials } = useStore((state) => state);
@@ -33,7 +33,7 @@ function OtpAuth() {
 
       console.log(`Difference is ${diffDays} days`);
 
-      if(diffDays <= 1){
+      if (diffDays <= 1) {
         navigate('/details');
       } else {
         navigate('/');
@@ -98,6 +98,13 @@ function OtpAuth() {
       setLoading(false);
     }
   }
+
+  useEffect(() => {
+    fetch(`${import.meta.env.VITE_API_URL}/api-v1/test/ping`)
+      .then(res => res.json())
+      .then(data => console.log("API Response:", data))
+      .catch(err => console.error("Error:", err));
+  }, []);
   return (
     <div className={styles.container} >
       {message && <p className={styles.message}>{message}</p>}
@@ -123,7 +130,7 @@ function OtpAuth() {
             ) : (
               <button disabled>Send OTP</button>
             )}
-            
+
           </form>
         ) : (
           <form onSubmit={handleOTPSubmit}>
@@ -133,13 +140,13 @@ function OtpAuth() {
               <input
                 type="password"
                 value={otp}
-                onChange={(e) => setOtp(e.target.value)}  
+                onChange={(e) => setOtp(e.target.value)}
                 required
                 placeholder='Enter the OTP sent'
               />
             </label>
-            {(otp.length === 0) ? ( <button disabled>Verity OTP</button> ) : (<button type="submit">Verify OTP</button>)}
-            
+            {(otp.length === 0) ? (<button disabled>Verity OTP</button>) : (<button type="submit">Verify OTP</button>)}
+
           </form>
         )}
 
