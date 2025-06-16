@@ -112,7 +112,7 @@ function OtpAuth() {
   }
 
   useEffect(() => {
-    
+    pingTest();
   }, []);
   return (
     <div className={styles.container} >
