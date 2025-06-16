@@ -114,6 +114,40 @@ function OtpAuth() {
   useEffect(() => {
     pingTest();
   }, []);
+
+  const [Loading, setloading] = useState(true);
+  
+    useEffect(() => {
+      // Wait for all resources (including images) to load
+      const handleLoad = () => setloading(false);
+  
+      if (document.readyState === "complete") {
+        setloading(false);
+      } else {
+        window.addEventListener("load", handleLoad);
+        return () => window.removeEventListener("load", handleLoad);
+      }
+    }, []);
+  
+    if (Loading) {
+      return (
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            background: "#fff",
+            zIndex: 9999,
+            fontSize: "2rem",
+          }}
+        >
+          LOADING...
+        </div>
+      );
+    }
+
   return (
     <div className={styles.container} >
       {message && <p className={styles.message}>{message}</p>}

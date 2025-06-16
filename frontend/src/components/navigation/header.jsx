@@ -19,7 +19,6 @@ function Header({ name }) {
     console.log("userPop", userPop);
 
     let navigate = useNavigate();
-
   return (
     <div className={styles.headContainer}>
         <header className={styles.head}>

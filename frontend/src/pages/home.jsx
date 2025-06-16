@@ -9,6 +9,7 @@ import api from '../libs/apiCalls.js';
 import useStore from "../store/index.js";
 import { useEffect } from 'react';
 import { toast } from 'sonner';
+import { useState } from 'react'
 
 function Home() {
   const { user, setCredentials, signOut } = useStore((state) => state);
@@ -35,6 +36,39 @@ function Home() {
   useEffect(() => {
     getUser();
   }, []);
+
+  const [Loading, setloading] = useState(true);
+    
+      useEffect(() => {
+        // Wait for all resources (including images) to load
+        const handleLoad = () => setloading(false);
+    
+        if (document.readyState === "complete") {
+          setloading(false);
+        } else {
+          window.addEventListener("load", handleLoad);
+          return () => window.removeEventListener("load", handleLoad);
+        }
+      }, []);
+    
+      if (Loading) {
+        return (
+          <div
+            style={{
+              position: "fixed",
+              inset: 0,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              background: "#fff",
+              zIndex: 9999,
+              fontSize: "2rem",
+            }}
+          >
+            LOADING...
+          </div>
+        );
+      }
 
   return (
     <div>
