@@ -99,11 +99,20 @@ function OtpAuth() {
     }
   }
 
+  async function pingTest () {
+    try {
+      const response = await api.get(`/test/ping`);
+
+      console.log(response);
+      
+    } catch (err){
+      console.log(err);
+      
+    }
+  }
+
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/api-v1/test/ping`)
-      .then(res => res.json())
-      .then(data => console.log("API Response:", data))
-      .catch(err => console.error("Error:", err));
+    
   }, []);
   return (
     <div className={styles.container} >
